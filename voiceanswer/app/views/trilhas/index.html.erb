@@ -1,0 +1,27 @@
+<h1>Listing trilhas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nivel</th>
+      <th>Assunto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trilhas.each do |trilha| %>
+      <tr>
+        <td><%= trilha.nivel %></td>
+        <td><%= trilha.assunto %></td>
+        <td><%= link_to 'Show', trilha %></td>
+        <td><%= link_to 'Edit', edit_trilha_path(trilha) %></td>
+        <td><%= link_to 'Destroy', trilha, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trilha', new_trilha_path %>

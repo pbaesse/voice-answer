@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nivel: 1.5
+  assunto: MyString
+
+two:
+  nivel: 1.5
+  assunto: MyString
