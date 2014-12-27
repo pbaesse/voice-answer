@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nicom.voiceanswer.voiceanswer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.TelaInicial"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.Cadastro"
+            android:label="@string/title_activity_cadastro" >
+        </activity>
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.CadastroAluno"
+            android:label="@string/title_activity_cadastro_aluno" >
+        </activity>
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.CadastroProfessor"
+            android:label="@string/title_activity_cadastro_professor" >
+        </activity>
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.CadastroDesafio"
+            android:label="@string/title_activity_cadastro_desafio" >
+        </activity>
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.BuscarDesafio"
+            android:label="@string/title_activity_buscar_desafio" >
+        </activity>
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.Desafio"
+            android:label="@string/title_activity_desafio" >
+        </activity>
+        <activity
+            android:name="nicom.voiceanswer.voiceanswer.Questoes"
+            android:label="@string/title_activity_questoes" >
+        </activity>
+    </application>
+
+</manifest>

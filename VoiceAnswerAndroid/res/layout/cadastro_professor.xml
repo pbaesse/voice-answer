@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CadastroProfessor" >
+
+    <TextView
+        android:id="@+id/tv_datan_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_cpf_cp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="21dp"
+        android:text="D. de nascimento:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_instituicao_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_datan_cp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="21dp"
+        android:text="Instituição:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/et_cpf_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_cpf_cp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="1dp"
+        android:layout_toRightOf="@+id/tv_cpf_cp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_datan_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_datan_cp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="1dp"
+        android:layout_toRightOf="@+id/tv_datan_cp"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_cidade_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_instituicao_cp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="21dp"
+        android:text="Cidade:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/et_instituicao_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_instituicao_cp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="1dp"
+        android:layout_toRightOf="@+id/tv_instituicao_cp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_cidade_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_cidade_cp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="1dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_cpf_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_datan_cp"
+        android:layout_below="@+id/et_nome_cp"
+        android:layout_marginTop="21dp"
+        android:text="CPF:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/et_nome_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_cabecalho_cp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/tv_nome_cp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_nome_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_nome_cp"
+        android:layout_alignBottom="@+id/et_nome_cp"
+        android:layout_alignLeft="@+id/tv_cpf_cp"
+        android:layout_marginTop="21dp"
+        android:text="Nome:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_estado_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_cidade_cp"
+        android:layout_below="@+id/tv_cidade_cp"
+        android:layout_marginTop="21dp"
+        android:text="Estado:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/et_estado_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_cidade_cp"
+        android:layout_alignTop="@+id/tv_estado_cp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_salvar_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Salvar" />
+
+    <TextView
+        android:id="@+id/tv_cabecalho_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Cadastro do professor"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
