@@ -11,18 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141227033235) do
+ActiveRecord::Schema.define(version: 20141230221427) do
 
   create_table "trilhas", force: true do |t|
     t.float    "nivel"
-    t.string   "assunto"
+    t.string   "tagAssunto"
+    t.string   "codigoTurma"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "turma_id"
   end
 
   create_table "turmas", force: true do |t|
+    t.string   "nome"
     t.string   "codigo"
-    t.string   "nTurma"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

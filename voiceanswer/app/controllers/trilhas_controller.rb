@@ -69,6 +69,6 @@ class TrilhasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def trilha_params
-      params.require(:trilha).permit(:nivel, :assunto)
+      params.require(:trilha).permit(:nivel, :tagAssunto, :turma_id)
     end
 end

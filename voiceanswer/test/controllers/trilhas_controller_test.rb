@@ -18,7 +18,7 @@ class TrilhasControllerTest < ActionController::TestCase
 
   test "should create trilha" do
     assert_difference('Trilha.count') do
-      post :create, trilha: { assunto: @trilha.assunto, nivel: @trilha.nivel }
+      post :create, trilha: { codigoTurma: @trilha.codigoTurma, nivel: @trilha.nivel, tagAssunto: @trilha.tagAssunto }
     end
 
     assert_redirected_to trilha_path(assigns(:trilha))
@@ -35,7 +35,7 @@ class TrilhasControllerTest < ActionController::TestCase
   end
 
   test "should update trilha" do
-    patch :update, id: @trilha, trilha: { assunto: @trilha.assunto, nivel: @trilha.nivel }
+    patch :update, id: @trilha, trilha: { codigoTurma: @trilha.codigoTurma, nivel: @trilha.nivel, tagAssunto: @trilha.tagAssunto }
     assert_redirected_to trilha_path(assigns(:trilha))
   end
 

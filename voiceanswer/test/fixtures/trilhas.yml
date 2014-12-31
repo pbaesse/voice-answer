@@ -2,8 +2,10 @@
 
 one:
   nivel: 1.5
-  assunto: MyString
+  tagAssunto: MyString
+  codigoTurma: MyString
 
 two:
   nivel: 1.5
-  assunto: MyString
+  tagAssunto: MyString
+  codigoTurma: MyString

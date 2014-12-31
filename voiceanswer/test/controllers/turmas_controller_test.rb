@@ -18,7 +18,7 @@ class TurmasControllerTest < ActionController::TestCase
 
   test "should create turma" do
     assert_difference('Turma.count') do
-      post :create, turma: { codigo: @turma.codigo, nTurma: @turma.nTurma }
+      post :create, turma: { codigo: @turma.codigo, nome: @turma.nome }
     end
 
     assert_redirected_to turma_path(assigns(:turma))
@@ -35,7 +35,7 @@ class TurmasControllerTest < ActionController::TestCase
   end
 
   test "should update turma" do
-    patch :update, id: @turma, turma: { codigo: @turma.codigo, nTurma: @turma.nTurma }
+    patch :update, id: @turma, turma: { codigo: @turma.codigo, nome: @turma.nome }
     assert_redirected_to turma_path(assigns(:turma))
   end
 

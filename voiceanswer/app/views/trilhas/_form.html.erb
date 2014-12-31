@@ -16,8 +16,12 @@
     <%= f.text_field :nivel %>
   </div>
   <div class="field">
-    <%= f.label :assunto %><br>
-    <%= f.text_field :assunto %>
+    <%= f.label :tagAssunto %><br>
+    <%= f.text_field :tagAssunto %>
+  </div>
+  <div class="field">
+    <%= f.label :codigoTurma %><br>
+    <%= collection_select(:trilha, :codigoTurma, Turma.all, :codigo, :codigo) %>
   </div>
   <div class="actions">
     <%= f.submit %>

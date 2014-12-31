@@ -1,1 +1,1 @@
-json.extract! @trilha, :id, :nivel, :assunto, :created_at, :updated_at
+json.extract! @trilha, :id, :nivel, :tagAssunto, :codigoTurma, :created_at, :updated_at
