@@ -1,0 +1,33 @@
+<%= form_for(@trilha) do |f| %>
+  <% if @trilha.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trilha.errors.count, "error") %> prohibited this trilha from being saved:</h2>
+
+      <ul>
+      <% @trilha.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nivel %><br>
+    <%= f.text_field :nivel %>
+  </div>
+  <div class="field">
+    <%= f.label :tagAssunto %><br>
+    <%= f.text_field :tagAssunto %>
+  </div>
+  
+  
+  <div class="field">
+    <%= f.label :codigoTurma %><br>
+    <%= collection_select(:trilha, :codigoTurma, Turma.all, :codigo, :codigo) %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

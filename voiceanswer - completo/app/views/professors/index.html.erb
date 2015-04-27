@@ -1,0 +1,45 @@
+<h1>Área do Professor!</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Matricula</th>
+      <th>Email</th>
+      <th>Foto</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @professors.each do |professor| %>
+      <tr>
+        <td><%= professor.nome %></td>
+        <td><%= professor.matricula %></td>
+        <td><%= professor.email %></td>
+        <td><%= professor.foto %></td>
+      <tr>
+        <!--<td><%= link_to 'Show', professor %></td>-->
+        <td><%= link_to 'Editar perfil', edit_professor_path(professor) %></td>
+        <!--Acho que deveria ser excluir o perfil, a caixa de texto já está adaptada :) -->
+        <td><%= link_to 'Destroy', professor, method: :delete, data: { confirm: 'Tem certeza que deseja excluir o seu perfil?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--Isso tem que apagar-->
+<!--<%= link_to 'New Professor', new_professor_path %>-->
+<br/>
+<%= link_to 'Lista de turmas', turmas_path %>
+<br/>
+<!--listar turmas sem linkar-->
+<%= link_to 'Nova turma', new_turma_path %>
+<br/>
+<%= link_to 'Lista de trilhas', trilhas_path %>
+<br/>
+<!--listar trilhas sem linkar-->
+<!--Dar link pra as trilhas-->
+<%= link_to 'Nova trilha', new_trilha_path %>
+
