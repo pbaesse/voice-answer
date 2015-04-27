@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nivel:</strong>
+  <%= @trilha.nivel %>
+</p>
+
+<p>
+  <strong>Tagassunto:</strong>
+  <%= @trilha.tagAssunto %>
+</p>
+
+<p>
+  <strong>Codigoturma:</strong>
+  <%= @trilha.codigoTurma %>
+</p>
+
+<%= link_to 'Edit', edit_trilha_path(@trilha) %> |
+<%= link_to 'Back', trilhas_path %>
