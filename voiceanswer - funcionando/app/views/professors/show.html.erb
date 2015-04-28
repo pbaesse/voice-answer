@@ -23,7 +23,7 @@
 <p>
   <strong>Foto:</strong>
   <!--<%= @professor.foto %>-->
-  <%= image_tag(@professor.foto_url, :width => 600) if @professor.foto.present? %>
+  <%= image_tag(@professor.foto_url, :width => 150) if @professor.foto.present? %>
 </p>
 
 <%= link_to 'Editar', edit_professor_path(@professor) %> |

@@ -42,6 +42,6 @@ class TrilhasController < ApplicationController
     end
 
     def trilha_params
-      params.require(:trilha).permit(:nivel, :tagAssunto, :turma_id)
+      params.require(:trilha).permit(:nivel, :tagAssunto, :codigoTurma)
     end
 end
